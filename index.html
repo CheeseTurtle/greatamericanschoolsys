@@ -47,10 +47,12 @@
 <div id="header">
     <div id='container'>
       <the>The</the>
+      <div class="hold">
       	<span class="txt-rotate rot"
       	data-period="2000"
 	data-rotate='[ "death", "life" ]' id="hi">
 	</span>
+	</div>
         <div id="of-the">OF THE</div>
    </div>
 
@@ -64,6 +66,12 @@
           height: 75vh;
           display: block;
           font-family: 'Raleway', 'Monaco', 'Roboto Sans', 'Lato', sans-serif;
+      }
+      .hold {
+      	display: block;
+      	height: 15%;
+      	position: relative;
+      	left: 10%;
       }
       #of-the {
       	display: block;
@@ -79,6 +87,7 @@
       }
       the { width: 25vw; font-size: 3vw; position: relative; left: 0%;  color: #C0C0C0; text-align: right; margin: 0; display: block; font-family: 'Raleway', 'Monaco', 'Roboto Sans', 'Lato', sans-serif;}
       the span, .rot {
+      	height: 100%;
           /*border: 1px solid white;*/
         /*padding:3em 2em;*/
         /*font-size:3.5em;*/
@@ -91,7 +100,7 @@
         /*margin: 0.2em 0;*/
         margin: 0;
         position: relative;
-          left: 10%;
+        left: 0; right: 0; bottom: 0; top: 0;
           font-size: 5vw;
           color: white;
           display:block;

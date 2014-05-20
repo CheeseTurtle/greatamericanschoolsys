@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-
 <head>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
 	<script type="text/javascript" src="https://rawgithub.com/janpaepke/ScrollMagic/master/js/jquery.scrollmagic.min.js"></script>
 	<script type="text/javascript" src="https://rawgithub.com/janpaepke/ScrollMagic/master/js/jquery.scrollmagic.debug.js"></script>
-	<!--<script type="text/javascript" src="https://rawgithub.com/jakiestfu/Blur.js/master/blur.js"</script>-->
+	<!--<script type="text/javascript" src="https://rawgithub.com/jakiestfu/Blur.js/master/blur.js"></script>-->
+	<script type="text/javascript" src="https://rawgithub.com/GianlucaGuarini/Vague.js/master/Vague.js"></script>
+	<!--<script typ="text/javascript" src="https://rawgithub.com/blivesta/oblurlay/master/src/js/oblurlay.min.js"></script>
+	<link href="https://rawgithub.com/blivesta/oblurlay/master/src/css/oblurlay.min.css" rel="stylesheet">-->
+	<link href="http://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
-
 <div id="back">
   <div id="back1"></div>
-  <div id="back2"></div>
-  <div id="back3"></div>
+  <div id="back3" class="back"></div>
+  <div id="back4" class="back"></div>
 </div>
 
 <div class="navbar">
@@ -30,7 +32,7 @@
     </div><div class="vr">|</div><div class="name" id="karissa">
       <span>KARISSA</span>
     </div>
-    <div id='highlight'>
+    <div id='highlight' class="oblurlay-upper">
       <div id='underline'></div>
       <div id='dropdowns'>
         <div class='dropdown' id='claimsen' style='z-index:-2;'>Claims<br/>&<br/>Enhancements</div>
@@ -40,79 +42,69 @@
         <div class='dropdown' id='rhetem' style='z-index:-6;'><br/>Rhetorical Elements</div>
     </div>
   </div>
-  
+</div></div>
+
+<div id="header">
+    <div id='container'>
+      <the>The</the><span
+         class="txt-rotate rot"
+         data-period="2000"
+         data-rotate='[ "death", "life" ]' id="hi"></span>
+        </div>
+      <style>
+      #container{
+          position: absolute;
+          width: 100vw;
+          height: 75vh;
+          display: block;
+          font-family: 'Raleway', 'Monaco', 'Roboto Sans', 'Lato', sans-serif;
+      }
+      the { width: 25vw; font-size: 3vw; position: relative; left: 0%;  color: #C0C0C0; text-align: right; margin: 0; display: block; font-family: 'Raleway', 'Monaco', 'Roboto Sans', 'Lato', sans-serif;}
+      the span, .rot {
+          /*border: 1px solid white;*/
+        /*padding:3em 2em;*/
+        /*font-size:3.5em;*/
+        font-size:5vw;
+        /*background:#222;*/
+        color:#333;
+        /*font-weight:200;*/
+        font-weight:100;
+        /*margin:0.4em 0;*/
+        /*margin: 0.2em 0;*/
+        margin: 0;
+        position: relative;
+          left: 10%;
+          font-size: 5vw;
+          color: white;
+          display:block;
+      }
+          
+          
+    </style>  
 </div>
-</div>
 
 
-  
-    
-    
-
-<!--<div id="trigger"></div>-->
-
-    <!--<div class="delta"></div>
-    <div class="scrollpos"></div>-->
-    <!--<div id="header"
-         data-start="top:50%;"
-         data--100-start="top:0%;"
-         data-100-start="top: 100%;"
-         style="top: 50%;"
-         >
-    Hi!
-    </div>-->
     <div id='slides'>
       <div id="1" class='slide'
          >
-      Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
-        Content here. 1 Content here.<br/>
+         <hr/>
+         <div class='wrapper'>
+             <span class="headerer">Works Cited</span>
+             
+         </div>
+         <hr/>
       </div>
       <div id="2" class='slide'
          >
-      Content here. 2 Content here. <br/>
-        Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>Content here. 2 Content here. <br/>
+         <hr/>
+         <div class='wrapper' style="font-size: 1.75vw;">
+            <span class="headerer"><i>The Education of Michelle Rhee</i></span><br/>
+            (Frontline)<br/><br/>
+            <iframe width="55%" height="80%" src="http://www.youtube.com/embed/yEaTym9IoEc" color="red" controls="2" fs="1" modestbranding="true" frameborder="0"
+                    rel="0" showinfo="0" theme="light" style="box-shadow: 0 0 15px black"></iframe>
+        </div>
       </div>
   </div>
-      
-    <!--<div id="2" class="slide"
-         style='position:absolute;top:200vh;'
-         >
-      Content here. 2 Content here.
-    </div>-->
-    
-    <!--<div id="2" class="slide skrollable"
-         data-top-bottom='background-color: rgb(255,0,0);'
-         data-bottom='background-color: rgb(0,0,255);'
-         style='position:absolute;top:200vh;'
-         >
-      Content here. 2 Content here.
-      
-    </div>
-    <div id="3" class="slide skrollable"
-         data-top-bottom='background-color: rgb(255,0,0);'
-         data-bottom='background-color: rgb(0,0,255);'
-         style='position:relative;top:300vh;'
-         >
-      Content here. 3 Content here.
-      
-    </div>-->
-    
-		<!--<div id="foo" data-start="background-color:rgb(0,0,255);height:0%;" data-end="background-color:rgb(255,0,0);height:100%;" class="skrollable skrollable-between" style="background-color: rgb(0, 0, 255);position:fixed;top:0;left:0;">HI</div>-->
-    
 
 <style>
 
@@ -169,21 +161,11 @@
   top: 100vh;
   padding: 0;
   margin: 0;
+  overflow: visible;
 }
-/*
-#trigger {
-  position: fixed;
-  top:0;
-  background: orange;
-  height: 2px;
-  width: 100%;
-}
-#pin1 {
-  position: absolute !important;
-}*/
 
 .slide {
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   position: relative;
   display: block;
   height: 50%;
@@ -192,8 +174,36 @@
   width: 100%;
   text-shadow: 1px 1px 3px #000000;
   color: #FFFFFF;
-	background-color: rgba(255, 255, 255, .25);
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+	/*background-color: rgba(255, 255, 255, .25);*/
 }
+hr {
+    width: 100%;
+    background-color: #E0E0E0;
+    color: transparent;
+    height: 5px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    position: absolute;
+    display: block;
+    top: 0; bottom: 0; right: 0; left: 0;
+    padding: 4% 2%;
+}
+
+.headerer { font-size: 5vw; text-decoration: underline; margin-bottom: 5%;}
+
+#2 .wrapper .headerer { font-size: 3vw !important; }
+/*.slide:after {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    border: 5px solid blue;
+    z-index: 500;
+    content: "";
+}*/
 #2 {
   top: 25%;
   }
@@ -216,55 +226,51 @@
   z-index: -10;
 }
 #back > div {
-  height: 100vh;
+  /*height: 100vh;*/
   /*background-attachment: fixed;*/
   background-repeat: no-repeat;
   position: relative;
 }
 #back1 {
   top: 0;
-  background-image: url(' http://2.bp.blogspot.com/_yP4fkhIqs1Q/TRGC487HHUI/AAAAAAAAAaE/esZgnmeH1b4/s1600/DSC_0724_5_6_tonemapped-ps.jpg');
+  background-image: url('main_schoolhouse.jpg');
   background-position: 50% 100%;
   background-size: 100% auto;
   height: 100vh;
 }
-#back2 {
-  height: 100vh;
+/*#back2 {
+  height: 200vh;
   background-position: 0 0;
-  background-image: url('http://alcysivyer.files.wordpress.com/2012/06/mg_6309.jpg');
+  background-image: url('bus.jpg');
   background-size: 100% auto;
   top: 0;
-}
+}*/
 #back3 {
-  background-image: url('http://i.imgur.com/uaT23.jpg');
+  background-image: url('busjungle.jpg');
+  background-position: 0 0;
+  top: 0;
   height: 200vh;
-  background-size: 100% auto;
-
+  background-size: cover;
 }
-
-
-
-
-
-
-
-
-
-
+#back4 {
+  background-image: url('lunch.jpg');
+  height: 200vh;
+  background-size: cover;
+  /*filter: brightness(0.25);*/
+}
 body {	margin: 0;
 }
 
-a:visited {
-	color: #D0D0D0;
-	text-decoration: none;
+a:visited, a, a:link {
+	color: inherit !important;
+	text-decoration: none !important;
 	
 }
-
-
 
 .navbar {
   /*border: 1px solid green;*/
   width: 100%;
+  height: 25vh;
   line-height: 1;
   height: calc(auto*2.5);
   background-color: rgba(255, 255, 255, .25);
@@ -292,11 +298,9 @@ a:visited {
 }
 .name { 
   font-weight: normal;
-  color: #C5C5C5/*#929292*/;
+  color: #C0C0C0/*#929292*/ !important;
   margin: 0;
-  text-decoration: none;
-    
-    /*width: 33.3333333%; float: left;*/
+  text-decoration: none !important;
     padding: 7px 0;
     text-align: center;
     text-transform: uppercase;
@@ -312,7 +316,7 @@ a:visited {
   /*margin-top: -.6em; padding: 0;*/
   font-size: 70%;
   top: -.19em;
-  color: #D8D8D8;
+  color: #C0C0C0;
 }
 
 #highlight {
@@ -323,7 +327,7 @@ a:visited {
   bottom: 0; 
   z-index: 0;
   left: 50%;
-  height: 5px;
+  height: 7px;
   transition-duration: .5s;
   transition-property: left, width;
   transition-delay: .25s;
@@ -335,8 +339,10 @@ a:visited {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 5px;
-  background-color: #E0E0E0;
+  height: 6px;
+  /*border-top: */
+  background-color: #C0C0C0;
+  border-color: #E3E3E3;
   transition-property: width, background-color;
   transition-duration: .25s;
 }
@@ -371,10 +377,10 @@ a:visited {
 #dropdowns #orgrefl{ font-size: .1; }
 #dropdowns #brefem, #dropdowns #rhetem{ height: 40px; }
 
-.name-nav:hover > .name{ color: #959595; }
-.name-nav:hover > .name:hover{ color: #E0E0E0; }
+.name-nav:hover > .name{ color: #909090 !important; }
+.name-nav:hover > .name:hover{ color: #EEEEEE !important; }
 
-.name-nav #claire:hover ~ #highlight { left: 7%;width: 14%; }
+.name-nav #claire:hover ~ #highlight { left: 6%;width: 14%; }
 .name-nav #claire:hover ~ #highlight #claimsen { 
   top: 0;
   background-color: #202020;
@@ -409,8 +415,10 @@ a:visited {
   color: #D0D0D0;
 }
 
-.name-nav div:hover ~ #highlight > #underline {width: 100%; }
-.name-nav div:hover ~ #highlight > #underline { background-color: #959595; }
+}
+
+.name-nav div:hover ~ #highlight > #underline {width: 100%; } 
+.name-nav div:hover ~ #highlight > #underline { background-color: #EEEEEE; /*border-color: #F0F0F0*/; }
 
 #claire { padding: 0 .4em 0 0; }
 #maryalice, #tim, #devon { padding: 0 .4em 0 .4em; }
@@ -418,17 +426,65 @@ a:visited {
 
 </style>
 
-
-
-</body>
-
-
-
-
-
-
 <script>
 	$(document).ready(function(){
+	    var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+    
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+    
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+    
+      this.el.innerHTML = '<span class="wrap rot">'+this.txt+'</span>';
+    
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+    
+      if (this.isDeleting) { delta /= 2; }
+    
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+    
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+    
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+      document.getElementByID('hi').appendChild(css);
+    };
+	    
   /*$('.container').css({backgroundColor: 'orange'});*/
   var controller = new ScrollMagic({
     globalSceneOptions: {triggerHook: 1,
@@ -437,11 +493,45 @@ a:visited {
 
   });
   
+  var vague1 = $('#back3').Vague({
+    intensity:     2,      // Blur Intensity
+    forceSVGUrl:    true,   // Force absolute path to the SVG filter,
+    // default animation options
+    animationOptions: {
+      duration: 0,
+      easing: 'linear' // here you can use also custom jQuery easing functions
+    }
+    });
+var vague2 = $('#back4').Vague({
+    intensity:      2,      // Blur Intensity
+    forceSVGUrl:    true,   // Force absolute path to the SVG filter,
+    // default animation options
+    animationOptions: {
+      duration: 0,
+      easing: 'linear' // here you can use also custom jQuery easing functions
+    }
+    });
+vague1.blur();
+vague2.blur();
+
+/*('.oblurlay').oblurlay();*/
+
+
   /*$('.slide').blurjs({
-    source: '#back',
+    source: '#back2',
     radius: 7,
     overlay: 'rgba(255,255,255,0.4)'
   });*/
+  /*$(".navbar").blear({
+    // Options
+    radius:       "15", // Blur radius
+    background:   "#ffffff",
+    opacity:      "60",
+    wrapperClass: ".name-nav",
+    blurClass:    "#back"
+});*/
+ /*$('.navbar').oblurlay();*/
+  
   function dur()
   {
     return $('#1').height();
@@ -490,30 +580,7 @@ a:visited {
   });
   
   
-  
-  
-  /*
-				new ScrollScene({triggerElement: "#trigger", duration: 150, offset: '100vh'})
-					.setTween(TweenMax(['#1'])
-					.on("enter leave", updateBox)
-					.addTo(controller)
-					.addIndicators(); // show indicators (requires debug extension)
-
-				new ScrollScene({triggerElement: "#trigger", duration: 150, offset: 600})
-					.setPin("#pin")
-					.on("enter leave", updateBox)
-					.addTo(controller)
-					.addIndicators(); // show indicators (requires debug extension)*/
-  
-  /*var scene1 = new ScrollScene({duration: 1, triggerElement: '#1t', triggerHook: 0})
-						.setTween(TweenMax.fromTo("#1", 1, {backgroundColor: '#FF0000', ease: Linear.easeOut},{backgroundColor: '#0000FF', ease: Linear.easeOut}))
-						.setPin("#1")
-						.addTo(controller);
-    scene1.addIndicators();*/
-  
-		/*var scene2 = new ScrollScene({triggerElement: "#trigger1", duration: 300})
-						.setPin("#pin1")
-						.addTo(controller);*/
 });
 </script>
+</body>
 </html>
